@@ -18,8 +18,9 @@ export default createGlobalStyle`
 
     body, input, button {
         color: #5C35F7;
-        font-size: 6px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 5px;
+        font-family: 'Open Sans';
+        font-weight: 600;
     }
 
     button {
