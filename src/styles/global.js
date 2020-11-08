@@ -9,7 +9,7 @@ export default createGlobalStyle`
     }
 
     html, body, #root {
-        height: calc(100% - 38px);
+        height: calc(100% - 19px)
     }
 
     body {
@@ -18,7 +18,6 @@ export default createGlobalStyle`
 
     body, input, button {
         color: #5C35F7;
-        font-size: 5px;
         font-family: 'Open Sans';
         font-weight: 600;
     }

@@ -36,7 +36,7 @@ export default function Main() {
                             />
                         </g>
                     </svg>
-                    Acompanhament
+                    Acompanhamento
                 </h1>
                 <h1>
                     <svg
