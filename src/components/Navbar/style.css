@@ -21,26 +21,26 @@
 
 .nav-menu.active{
 
-    width: 100px;
+    width: 80px;
     transition: 850ms;
 }
 
 .nav-text{
     display: flex;
-    justify-content: start;;
+    justify-content: flex-start;
     align-items: center;
     padding: 8px 0px 8px 16px;
     list-style: none;
     height: 60px;
 }
 
-.nav-text span{
+.nav-text a span{
     margin-left: 16px;
 }
 
 .nav-text a{
+    color: var(--color-inavtive-text);    
     text-decoration: none;
-    color: var(--color-inavtive-text);
     font-size: 18px;
     width: 95%;
     height: 100%;
@@ -60,5 +60,5 @@
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
 }
