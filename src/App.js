@@ -1,10 +1,15 @@
 import React from 'react';
 
+import Routes from './routes'
+import {Container} from './style'
+
 function App() {
     return (
-        <div>
-            <h1>teste</h1>
-        </div>
+        <>
+            <Container>
+                <Routes/>   
+            </Container>
+        </>
     );
 }
 export default App;

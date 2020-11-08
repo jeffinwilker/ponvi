@@ -10,4 +10,5 @@
 
 body{
     background-color: var(--cs-background-color);
+    padding: 1.5rem;
 }
