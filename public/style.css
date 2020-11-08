@@ -1,0 +1,14 @@
+:root{
+    --cs-background-color: #E3E6E8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    background-color: var(--cs-background-color);
+    padding: 0.2rem;
+}
