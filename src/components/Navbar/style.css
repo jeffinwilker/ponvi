@@ -15,12 +15,13 @@
     width: 250px;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     transition: 850ms;
+    position: relative;
 }
 
 .nav-menu.active{
-
     width: 80px;
     transition: 850ms;
 }
@@ -61,4 +62,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
 }

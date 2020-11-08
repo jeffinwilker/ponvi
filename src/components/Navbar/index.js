@@ -23,16 +23,16 @@ export default function Navbar(){
                             </li>
                         );
                     })}
-
-                    <li className='navbar-toggle'>
-                        <Link to='#' className="menu-bars">
-                            {sidebar ? 
-                                <BsIcons.BsBoxArrowRight onClick={ShowSidebar}/> : 
-                                <BsIcons.BsBoxArrowLeft onClick={ShowSidebar}/>
-                            }
-                        </Link>
-                    </li>
                 </ul>
+
+                <div className='navbar-toggle'>
+                    <Link to='#' className="menu-bars">
+                        {sidebar ? 
+                            <BsIcons.BsBoxArrowRight onClick={ShowSidebar}/> : 
+                            <BsIcons.BsBoxArrowLeft onClick={ShowSidebar}/>
+                        }
+                    </Link>
+                </div>                
             </nav>
         </>
     );
