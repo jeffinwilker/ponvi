@@ -17,7 +17,7 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    transition: 850ms;
+    /* transition: 850ms; */
     position: relative;
 }
 
