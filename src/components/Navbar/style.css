@@ -4,15 +4,14 @@
 }
 
 
-.menu-bars{
-    margin-left: 2rem;
-    font-size: 2rem;
+.menu-bars{  
+    font-size: 1.7rem;
     background: none;
 }
 
 .nav-menu{
     background: none;
-    width: 250px;
+    width: 350px;
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -63,8 +62,16 @@
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     position: absolute;
     bottom: 0;
 }
 
+.navbar-toggle a{
+    color: var(--color-inavtive-text)
+    
+}
+
+.navbar-toggle a:hover{
+    color: var(--color-primary)
+}

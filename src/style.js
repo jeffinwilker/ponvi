@@ -20,7 +20,9 @@ export const Content = styled.div`
     background: #eff0f7;
     border-radius: 26px;
     padding: 40px 40px 0 40px;
-    margin-left: 20px;
+    margin-left: 40px;
+    font-family: 'Open sans';
+    font-weight: 600;
 `;
 
 export const SystemTitle = styled.h1`
