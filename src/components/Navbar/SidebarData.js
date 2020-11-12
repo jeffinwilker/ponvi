@@ -1,80 +1,30 @@
 import React from 'react'
 
+import * as FaIcons from 'react-icons/fa'
+
+import * as IoIcons from 'react-icons/io'
+
+import * as RiIcons from 'react-icons/ri'
+
 export const sidebarData = [
     {
         title: 'Inicio',
-        icon:   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26.88"
-                    height="21.391"
-                    viewBox="0 0 26.88 21.391"
-                >
-                    <path
-                        id="home"
-                        d="M23.6,12.948v8a1.082,1.082,0,0,1-1.067,1.067h-6.4v-6.4H11.866v6.4h-6.4A1.082,1.082,0,0,1,4.4,20.951v-8a.222.222,0,0,1,.008-.05.222.222,0,0,0,.008-.05L14,4.945l9.587,7.9a.228.228,0,0,1,.017.1ZM27.322,11.8l-1.033,1.234a.565.565,0,0,1-.35.183h-.05a.513.513,0,0,1-.35-.116L14,3.478,2.463,13.1a.619.619,0,0,1-.4.116.565.565,0,0,1-.35-.183L.68,11.8a.539.539,0,0,1-.116-.391.487.487,0,0,1,.182-.358L12.733,1.061a2.067,2.067,0,0,1,2.534,0l4.068,3.4V1.211A.514.514,0,0,1,19.87.677h3.2a.514.514,0,0,1,.534.534v6.8l3.651,3.035a.485.485,0,0,1,.183.358.539.539,0,0,1-.116.391Z"
-                        transform="translate(-0.562 -0.627)"
-                        fill="#5c35f7"
-                    />
-                </svg>,
+        icon:  <FaIcons.FaHome />,
         path: '/',
         cName: 'nav-text'
     },
 
     {
-        title: 'Acompanhamento',
-        icon:   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20.747"
-                    height="20.738"
-                    viewBox="0 0 20.747 20.738"
-                >
-                    <g id="graph-pie" transform="translate(-4.627 -4.632)">
-                        <path
-                            id="Caminho_1"
-                            data-name="Caminho 1"
-                            d="M19.4,4.633a.37.37,0,0,0-.37.37.312.312,0,0,0,.011.054h-.011v8.779a.37.37,0,0,0,.37.37h8.779v-.011a.321.321,0,0,0,.054.011.37.37,0,0,0,.37-.37,9.3,9.3,0,0,0-9.2-9.2Z"
-                            transform="translate(-3.231)"
-                            fill="#b8b3d4"
-                        />
-                        <path
-                            id="Caminho_2"
-                            data-name="Caminho 2"
-                            d="M23.234,16.584a.369.369,0,0,0-.37-.37h-8.07a.37.37,0,0,1-.37-.37V7.8h-.011a.327.327,0,0,0,.011-.054.37.37,0,0,0-.37-.37c-.009,0-.016,0-.025,0v0l-.1,0a9.3,9.3,0,1,0,9.3,9.3c0-.029,0-.059,0-.088,0,0,0-.006,0-.01Z"
-                            transform="translate(0 -0.616)"
-                            fill="#b8b3d4"
-                        />
-                    </g>
-                </svg>,
+        title: 'Histórico',
+        icon:   <IoIcons.IoMdPie />,
         path: '/acompanhamento',
         cName: 'nav-text'
-    },  
-    
+    },
+
     {
         title: 'Sair',
-        icon:   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19.747"
-                    height="19.066"
-                    viewBox="0 0 19.747 19.066"
-                >
-                    <g id="logout-solid" transform="translate(-5 -4)">
-                        <path
-                            id="Caminho_3"
-                            data-name="Caminho 3"
-                            d="M17.257,4H6.362A1.362,1.362,0,0,0,5,5.362V21.7a1.362,1.362,0,0,0,1.362,1.362H17.257A1.362,1.362,0,0,0,18.619,21.7V17.619h-6.38a.681.681,0,0,1,0-1.362h6.38V5.362A1.362,1.362,0,0,0,17.257,4Z"
-                            transform="translate(0 0)"
-                            fill="#b8b3d4"
-                        />
-                        <path
-                            id="Caminho_4"
-                            data-name="Caminho 4"
-                            d="M27.152,17.2a.681.681,0,0,0-.96.96l2.3,2.254H25v1.362h3.493l-2.3,2.356a.681.681,0,1,0,.96.96l3.977-3.949Z"
-                            transform="translate(-6.381 -4.161)"
-                            fill="#b8b3d4"
-                        />
-                    </g>
-                </svg>,
+        icon:   <RiIcons.RiLogoutCircleFill />,
         path: '/',
         cName: 'nav-text'
-    },     
+    },
 ]
