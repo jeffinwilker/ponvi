@@ -11,9 +11,6 @@ export default function Navbar(){
 
     return(
         <>  
-            <div>
-                
-            </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                 <ul className='nav-menu-items'>
                     {sidebarData.map((item, index)=>{

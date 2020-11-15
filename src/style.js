@@ -22,10 +22,10 @@ export const Content = styled.div`
     padding: 40px 40px 0 40px;
     margin-left: 40px;
     font-family: 'Open sans';
-    font-weight: 600;
 `;
 
 export const SystemTitle = styled.h1`
     color: #5C35F7;
     font-size: 1.8rem;
+    margin-top: 10px;
 `

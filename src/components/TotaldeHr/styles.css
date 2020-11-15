@@ -1,0 +1,38 @@
+:root{
+    --color-inavtive-text: #93919F;
+    --color-title: #b8b3d4;
+    --color-primary: #5C35F7;
+}
+
+.TiHrTotal{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #329E76;
+    width: 160px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 70px;
+    
+}
+
+.Titotal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ToIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+}
+
