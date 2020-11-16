@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import {Content, SystemTitle} from './style'
+import {Content} from './style'
 import Navbar from './components/Navbar'
 import Inicio from './pages/Inicio' 
+import Profile from './components/Profile'
 import Acompanhamento from './pages/Acompanhamento' 
 
 export default function Router() {
@@ -11,7 +12,7 @@ export default function Router() {
         <BrowserRouter>
             <Navbar/>
             <Content>
-                <SystemTitle>Sitema de ponto</SystemTitle>
+                <Profile/>
                 <Switch>
                     <Route path="/" exact component={Inicio} />
                     <Route path="/acompanhamento" component={Acompanhamento} />
