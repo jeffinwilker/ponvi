@@ -4,84 +4,36 @@
     --color-primary: #5C35F7;
 }
 
-.container{
-    background: white;
-    padding: 28px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
+.header, .detail{
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr) 2fr;
 }
 
-
-.TituloTi{
-    margin-top: 50px;
-    font-size: 14px;
+.header{
     color: var(--color-title);
-    font-weight: bold;
-    padding-left: 50px;
-    padding-right: 65px;
+    margin: 1.5rem 0 0.5rem 0;    
 }
 
-.TituloTi tr{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.detail{
+    background-color: white;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 0px 10px #00000014;
+    border-radius: 13px;
+    height: 2.0rem;
+    padding: 0.8rem;
 }
 
-.TituloTi1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 480px;
+#BPonto{ 
+    font-size: 1.5em; 
+    font-weight: normal; 
+    background-color: var(--color-primary); 
+    color: white; 
+    padding: 20px; 
+    border-radius: 30px; 
+    display: flex; 
+    flex-direction: column; 
+    padding-left: 50px; 
+    padding-right: 50px; 
+    margin-top: 30px; 
 }
 
-.TituloTi2 {
-    width: 50px;
-}
-
-.TableTo1 {
-    width: 85px;
-}
-
-.TituloTi tr > th{
-    font-weight: bold;
-}
- 
-.TableCo tr > th{
-    font-weight: normal;
-}
-
-.TableCo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-.TableCoPo tr{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 480px;
-}
-
-
-.Bbutton {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#BPonto{
-    font-size: 18px;
-    font-weight: normal;
-    background-color: var(--color-primary);
-    color: white;
-    padding: 20px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 30px;
-}

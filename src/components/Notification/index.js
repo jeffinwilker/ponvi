@@ -3,21 +3,8 @@ import React from 'react';
 import { IoMdNotifications } from "react-icons/io";
 
 
-export default function Notifications(){
-    const Notifi = [
-        {
-            Noti: <IoMdNotifications/>
-        },
-    ]   
+export default function Notifications(){  
     return(        
-            <div className="Container">
-                {Notifi.map((item) => {
-                    return(
-                        <div>
-                            {item.Noti}
-                        </div>
-                    );
-                 })}
-            </div>
-         )
+        <div className="Container"><IoMdNotifications/></div>
+    )
 }

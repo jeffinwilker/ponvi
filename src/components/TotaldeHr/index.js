@@ -5,12 +5,9 @@ import './styles.css';
 import * as CgIcons from 'react-icons/cg'
 
 export default function HrTotal(){
-    //Esse array Valor da hora total.
-    const horaTotal = [
-        {
-            HoraTotal:'002:55'
-        }
-    ]
+    
+    const  TOTALHORA = '002:50';
+
     return(
         <div className="Titotal">
             <div className="TiHrTotal">
@@ -18,11 +15,7 @@ export default function HrTotal(){
                     <div className="ToIcon">
                         <CgIcons.CgTimelapse/>
                     </div>
-                    {horaTotal.map((item)=>{
-                        return(                           
-                            <span>{item.HoraTotal}</span>                                               
-                        );   
-                    })}
+                    <span>{TOTALHORA}</span>
                 </>
             </div>
         </div>
