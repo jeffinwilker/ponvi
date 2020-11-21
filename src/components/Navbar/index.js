@@ -10,7 +10,7 @@ export default function Navbar(){
     const ShowSidebar = ()=>SetSidebar(!sidebar);
 
     return(
-        <>
+        <>  
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                 <ul className='nav-menu-items'>
                     {sidebarData.map((item, index)=>{
