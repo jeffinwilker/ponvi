@@ -2,6 +2,8 @@ import React from 'react';
 
 import ResultPointTable from '../../components/ResultPointTable'
 
+import './style.css'
+
 export default function Acompanhamento() {
     return(
         <>
