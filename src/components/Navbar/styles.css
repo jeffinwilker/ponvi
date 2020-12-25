@@ -4,7 +4,7 @@
 }
 
 
-.menu-bars{  
+.menu-bars{
     font-size: 1.7rem;
     background: none;
 }
@@ -71,7 +71,7 @@
 
 .navbar-toggle a{
     color: var(--color-inavtive-text)
-    
+
 }
 
 .navbar-toggle a:hover{

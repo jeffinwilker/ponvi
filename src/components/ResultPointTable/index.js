@@ -1,8 +1,82 @@
-import React from 'react';
-
 import './style.css'
 
+import React, { useState } from 'react';
+
+import ButtonPoint from '../ButtonPoint'
+
+    function addZero(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
+  }
+
+    const data = new Date();
+    const dia = data.getDate();
+    const ms = data.getMonth();
+    const mes = ms + 1;
+    const ano = data.getFullYear();
+    const DComple = dia + "/" + mes + "/" + ano;
+
+
+    const horas = data.getHours();
+    const minutos = addZero(data.getMinutes());
+    const Phoras = horas + ":" + minutos;
+
+
 export default function ResultPointTable(){
+    //Esse array vai ser preenchido ao consultar a API
+    const [ponto, setPontos]  = useState([
+        {
+            data:DComple,
+            entrada1:Phoras,
+            saida1:Phoras,
+            entrada2:Phoras,
+            saida2:Phoras,
+            total:'20:20',
+            setor:'Desenvolvimento'
+        },
+
+    ]);
+
+    function handleAddPonto(){
+        setPontos([...ponto, setPontos]);
+    }
+
+    /*function handleAddPoint() {
+        setPontos([...ponto, setPontos]);
+    }*/
+
+        return (
+            <>
+                <div className="header">
+                    <div className="header">Data</div>
+                    <div id="Hentrada"className="header">Entrada</div>
+                    <div className="header">Saída</div>
+                    <div className="header">Entrada</div>
+                    <div className="header">Saída</div>
+                    <div id="Hsaida" className="header">Total</div>
+                    <div className="header">Setor</div>
+                </div>
+                <div>
+                {ponto.map((pont, index )=> (
+                    <ul key={index} className="detail">
+                        <li key={pont.data}>{pont.data}</li>
+                        <li id="entrada">{pont.entrada1}</li>
+                        <li>{pont.saida1}</li>
+                        <li>{pont.entrada2}</li>
+                        <li>{pont.saida2}</li>
+                        <li id="saida">{pont.total}</li>
+                        <li>{pont.setor}</li>
+                    </ul>
+                ))}
+                </div>
+                <button type="button" onClick={handleAddPonto}>Add novo ponto</button>
+                <ButtonPoint onClick={handleAddPonto}></ButtonPoint>
+            </>
+        )
+    };
+/* export default function ResultPointTable(){
     //Esse array vai ser preenchido ao consultar a API
     const tabela = [
         {
@@ -62,4 +136,6 @@ export default function ResultPointTable(){
             })}
         </>
     );
-}
+}*/
+
+

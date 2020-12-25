@@ -45,7 +45,9 @@ div:last-child{
     display: flex;
     justify-content: space-around
 }
-
+.detail li{
+    list-style:none;
+}
 
 #BPonto{
     font-size: 1.5em;
@@ -74,3 +76,4 @@ div:last-child{
 #Hsaida{
     margin-right: 9.2rem;
 }
+
