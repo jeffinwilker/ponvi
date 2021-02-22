@@ -5,9 +5,9 @@ import '../ButtonPoint/styles.css';
 export default function ButtonPoint(){
     return(
         <>
-            <button type="button">teste </button>
             <div className="divv">
-                <span className="Bbutton">Começar bem :)</span>
+                <button  className="Bbutton" type="button">Começar bem :) </button>
+                <button  className="Sbutton" type="button">Descançar um pouco </button>            
             </div>
         </>
     )

@@ -2,6 +2,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .Bbutton {
@@ -17,5 +18,25 @@
     display:flex;
     align-items: center;
     justify-content: center;
+    margin-left: 20px;
+    outline: none;
+}
+
+
+.Sbutton {
+    font-size: 1.2em;
+    margin-top: 1.5rem;
+    font-weight: normal;
+    background-color: rgb(238, 34, 85);
+    color: white;
+    padding: 0.8rem;
+    width: 18%;
+    border-radius: 1.8rem;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    outline: none;
 }
 

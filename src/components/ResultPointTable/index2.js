@@ -27,23 +27,25 @@ import React, { useState } from 'react';
     const Phoras = horas + ":" + minutos;
 
 
-export default function ResultPointTable(){
+export default function ResultPointTable2(){
     //Esse array vai ser preenchido ao consultar a API
-    const [ponto, setPontos]  = useState([
-        {
-            data: DComple,
-            entrada1:Phoras,
-            saida1:Phoras,
-            entrada2:Phoras,
-            saida2:Phoras,
-            total:'20:20',
-            setor:'Desenvolvimento'
-        },
+    const [ponto, setPontos]  = useState([]);
 
-    ]);
+    const [ newpont ] = [{
+        data: DComple,
+        entrada1:Phoras,
+        saida1:Phoras,
+        entrada2:Phoras,
+        saida2:Phoras,
+        total:'20:20',
+        setor:'Desenvolvimento'
+    }]
+
+    
+   
 
     function handleAddPonto(){
-        setPontos([...ponto, 'stru']);
+        setPontos([...ponto, newpont]);
     }
 
 
@@ -58,21 +60,40 @@ export default function ResultPointTable(){
                     <div id="Hsaida" className="header">Total</div>
                     <div className="header">Setor</div>
                 </div>
+
+
                 <div>
-                <ul className="detail">    
-                {ponto.map((pont )=> (      
-                    <>              
-                        <li key={pont.data}>{pont.data}</li>
-                        <li id="entrada">{pont.entrada1}</li>
-                        <li>{pont.saida1}</li>
-                        <li>{pont.entrada2}</li>
-                        <li>{pont.saida2}</li>
-                        <li id="saida">{pont.total}</li>
-                        <li>{pont.setor}</li> 
-                    </>                       
-                ))}
-                </ul>
+                    <ul className="detail">    
+                        {ponto.map((ponto, index) => (       
+                            <>             
+                                <li key={index}>{ponto.data}</li>
+                                <li id="entrada">{ponto.entrada1}</li>
+                                <li>{ponto.saida1}</li>
+                                <li>{ponto.entrada2}</li>
+                                <li>{ponto.saida2}</li>
+                                <li id="saida">{ponto.total}</li>
+                                <li>{ponto.setor}</li>     
+                            </>          
+                            ))
+                            }    
+                    </ul>
+                    
                 </div>
+                {/* {ponto.map((pont, index ) => (      
+                    <div key={index}>
+                        <ul className="detail">         
+                            <li key={pont.data}>{pont.data}</li>
+                            <li id="entrada">{pont.entrada1}</li>
+                            <li>{pont.saida1}</li>
+                            <li>{pont.entrada2}</li>
+                            <li>{pont.saida2}</li>
+                            <li id="saida">{pont.total}</li>
+                            <li>{pont.setor}</li> 
+                        </ul>
+                    </div>                       
+                ))} */}
+                
+                <button type="button" onClick={handleAddPonto}>Add novo ponto</button>
                 <button type="button" onClick={handleAddPonto}>Add novo ponto</button>
             </>
         )

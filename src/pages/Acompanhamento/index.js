@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ResultPointTable from '../../components/ResultPointTable'
+import ResultPointTable from '../../components/ResultPointTable/index.jsx'
 
 import './style.css'
 
